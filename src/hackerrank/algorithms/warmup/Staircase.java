@@ -30,15 +30,15 @@ public class Staircase {
 		
 	     return result;   
 	}
-	
-	private static String drawOneLine(int whiteSpaces, int hashes){
-		String result = "";
-		for(int i = 0; i<whiteSpaces; i++){
-			result+=" ";
+		
+	 private static String drawOneLine(int whiteSpaces, int hashes){
+			String result = "";
+			for(int i = 0; i<whiteSpaces; i++){
+				result+=" ";
+			}
+			for(int i = 0; i<hashes; i++){
+				result+="#";
+			}
+			return result;
 		}
-		for(int i = 0; i<hashes; i++){
-			result+="#";
-		}
-		return result;
-	}
 }

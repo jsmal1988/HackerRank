@@ -4,16 +4,18 @@
  */
 package hackerrank.algorithms.warmups;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;import java.sql.Time;
 
 import org.junit.Test;
 
 import hackerrank.algorithms.warmup.AVeryBigSum;
+import hackerrank.algorithms.warmup.CircularArrayRotation;
 import hackerrank.algorithms.warmup.CompareTheTriplets;
 import hackerrank.algorithms.warmup.DiagonalDifference;
 import hackerrank.algorithms.warmup.PlusMinus;
 import hackerrank.algorithms.warmup.SimpleArraySum;
 import hackerrank.algorithms.warmup.Staircase;
+import hackerrank.algorithms.warmup.TimeConversion;
 
 public class Warmups {
 	@Test
@@ -49,7 +51,19 @@ public class Warmups {
 	
 	@Test
 	public void testStaircase(){
-		assertEquals(Staircase.run("4"),"   #\n  ##\n ###\n####\n");
+		assertEquals(Staircase.run("4"),"   #\n  ##\n ###\n####");
+	}
+	
+	@Test
+	public void testTimeConversion(){
+		assertEquals(TimeConversion.run("07:05:45PM"),"19:05:45");
+		assertEquals(TimeConversion.run("12:40:22AM"),"00:40:22");
+		assertEquals(TimeConversion.run("12:45:54PM"),"12:45:54");
+	}
+	
+	@Test
+	public void testCircularArrayRotation(){
+		assertEquals(CircularArrayRotation.run("3 2 3 1 2 3 0 1 2"),"2\n3\n1\n");
 	}
 
 }
