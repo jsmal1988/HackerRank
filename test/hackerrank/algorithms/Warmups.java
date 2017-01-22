@@ -2,7 +2,7 @@
  * @author Jakub Smal 
  * 21.01.2017 17:22:49
  */
-package hackerrank.algorithms.warmups;
+package hackerrank.algorithms;
 
 import static org.junit.Assert.assertEquals;import java.sql.Time;
 
@@ -63,6 +63,7 @@ public class Warmups {
 	
 	@Test
 	public void testCircularArrayRotation(){
+		assertEquals(CircularArrayRotation.run("3 2 3 1 2 3 0 1 2"),"2\n3\n1\n");
 		assertEquals(CircularArrayRotation.run("3 2 3 1 2 3 0 1 2"),"2\n3\n1\n");
 	}
 
