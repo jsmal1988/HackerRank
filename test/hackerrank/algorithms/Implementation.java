@@ -9,7 +9,10 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import hackerrank.algorithms.implementation.easy.AppleAndOrange;
+import hackerrank.algorithms.implementation.easy.BetweenTwoSets;
+import hackerrank.algorithms.implementation.easy.BonAppetit;
 import hackerrank.algorithms.implementation.easy.DesignerPDFViewer;
+import hackerrank.algorithms.implementation.easy.DivisibleSumPairs;
 import hackerrank.algorithms.implementation.easy.Kangaroo;
 import hackerrank.algorithms.implementation.easy.MiniMaxSum;
 
@@ -43,7 +46,25 @@ public class Implementation {
 		assertEquals(Kangaroo.run("0 2 5 3"), "NO");
 		assertEquals(Kangaroo.run("14 4 98 2"), "YES");
 		assertEquals(Kangaroo.run("43 2 70 2"), "NO");
-		
-		
 	}
+	
+	@Test
+	public void testBetweenTwoSets(){
+		assertEquals(BetweenTwoSets.run("2 3\n2 4\n16 32 96"), "3");
+		assertEquals(BetweenTwoSets.run("3 2\n2 3 6\n42 84"), "2");
+		assertEquals(BetweenTwoSets.run("1 1\n1\n100"), "9");
+	}
+	
+	@Test
+	public void testDivisibleSumPairs(){
+		assertEquals(DivisibleSumPairs.run("6 3\n1 3 2 6 1 2"), 5);
+	}
+
+	@Test
+	public void testBonAppetit(){
+		assertEquals(BonAppetit.run("4 1\n3 10 2 9\n12"), "5");
+		assertEquals(BonAppetit.run("4 1\n3 10 2 9\n7"), "Bon Appetit");
+	}
+	
+	
 }
